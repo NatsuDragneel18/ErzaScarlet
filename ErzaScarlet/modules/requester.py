@@ -7,9 +7,9 @@ import logging
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
 
-IN_GRP = -1001415010098
+IN_GRP = -1001588917099
 bot = asst = tbot
-REQ_GO =  -1001509437008
+REQ_GO =  -1001553672673
 on = tbot.on
 auth = OWNER 
 
@@ -22,11 +22,11 @@ async def filter_requests(event):
       #  await asst.send_message(IN_GRP,
         #                    f"**We are not taking any requests for some days.\n\nSorry for inconvenience 😶**",
         #                    buttons=[
-        #                        [Button.url("💠 Channel 💠", url="https://t.me/AN1ME_HUB"),
-        #                        Button.url("⚜️ Group ⚜️", url="https://t.me/an1me_hub_discussion")],
-        #                        [Button.url("📜 Index 📜", url="https://t.me/index_animehub"),
-        #                        Button.url("🎬 Movies 🎬", url="https://t.me/AN1ME_HUB_MOVIES")],
-        #                        [Button.url("💌 AMV 💌", url="https://t.me/AnimeHub_Amv")]])
+        #                        [Button.url("Anime Channel", url="https://t.me/animechamberuploads"),
+        #                        Button.url("Chat Group", url="https://t.me/thechamberofanimefans")],
+        #                        [Button.url("Index Channel", url="https://t.me/animechamberanime"),
+        #                        Button.url("Manga Channel", url="https://t.me/mangachamber")],
+        #                        [Button.url("Ongoing Anime", url="https://t.me/AnimeChamberOngoing")]])
         if (event.reply_to_msg_id):
             msg = (await event.get_reply_message()).message
         else:
@@ -52,16 +52,16 @@ async def filter_requests(event):
                                 f"**Request By {user}**\n\n{msg}",
                                 buttons=[
                                     [Button.url("Requested Message", url=f"https://t.me/c/{chat_id}/{event.message.id}")],
-                                    [Button.inline("🚫 Reject", data="reqdelete"),
-                                    Button.inline("Done ✅", data="isdone")],
-                                    [Button.inline("⚠️ Unavailable ⚠️", data="unavl")]])
+                                    [Button.inline("Reject", data="reqdelete"),
+                                    Button.inline("Done", data="isdone")],
+                                    [Button.inline("Unavailable", data="unavl")]])
         btns = [
-            [Button.url("⏳ Request Status ⏳", url=f"https://t.me/{username}/{x.id}")],
-            [Button.url("💠 Channel 💠", url="https://t.me/indianimei"),
-            Button.url("⚜️ Group ⚜️", url="https://t.me/indianimein")],
-            [Button.url("📜 Index 📜", url="https://t.me/IndianimeNetwork"),
-            Button.url("Base", url="https://t.me/indianimebase")],
-            [Button.url("Ongoing Anime", url="https://t.me/Ongoing_Anime1")]]
+            [Button.url("Request Status", url=f"https://t.me/{username}/{x.id}")],
+            [Button.url("Anime Channel", url="https://t.me/animechamberuploads"),
+            Button.url("Chat Group", url="https://t.me/thechamberofanimefans")],
+            [Button.url("Index Channel", url="https://t.me/animechamberanime"),
+            Button.url("Manga Channel", url="https://t.me/mangachamber")],
+            [Button.url("Ongoing Anime", url="https://t.me/AnimeChamberOngoing")]]
         await event.reply(f"**👋 Hello {user} !!**\n\n📍 Your Request for  `{anim}`  has been submitted to the admins.\n\n🚀 Your Request Will Be Uploaded In 48hours or less.\n📌 Please Note that Admins might be busy. So, this may take more time. \n\n**👇 See Your Request Status Here 👇**", buttons=btns)
         if not auth:
             async for x in bot.iter_participants("@indianimein", filter=ChannelParticipantsAdmins):
