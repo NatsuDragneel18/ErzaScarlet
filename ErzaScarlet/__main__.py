@@ -82,9 +82,9 @@ HELP_STRINGS = """
    ◔ in a Group: will redirect you to pm, with all that chat's settings.
 """
 
-ErzaScarlet_IMG = "https://telegra.ph/file/d568490af19092a7887b0.jpg)"
+ErzaScarlet_IMG = "https://telegra.ph/file/d568490af19092a7887b0.jpg"
 ErzaScarlet_YAWN = "https://telegra.ph/file/4dda9b3060287969ecb7d.mp4"
-YAWN_CPT = "I am Awake !"
+YAWN_CPT = "I am Awake!"
 
 IMPORTED = {}
 MIGRATEABLE = []
