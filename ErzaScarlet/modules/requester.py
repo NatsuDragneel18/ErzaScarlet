@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
 
-IN_GRP = -1001587192183
+IN_GRP = -1001588917099
 bot = asst = tbot
 REQ_GO =  -1001553672673
 on = tbot.on
@@ -83,7 +83,7 @@ async def delete_message(event):
             [Button.url("Ongoing Anime", url="https://t.me/AnimeChamberOngoing")]]
        
         await event.edit(f"**REJECTED**\n\n~~{xx}~~", buttons=[Button.inline("Request Rejected", data="ndone")])
-        await tbot.send_message(-1001587192183, f"** Request Rejected By Admin !!**\n\n~~{xx}~~", buttons=btns)
+        await tbot.send_message(-1001588917099, f"** Request Rejected By Admin !!**\n\n~~{xx}~~", buttons=btns)
     else:
         await event.answer("Who are you? This is for admins only..", alert=True, cache_time=0)
         
@@ -107,7 +107,7 @@ async def delete_message(event):
             [Button.url("Ongoing Anime", url="https://t.me/AnimeChamberOngoing")]]
        
         await event.edit(f"**UNAVAILABLE**\n\n~~{xx}~~", buttons=[Button.inline("Unavailable", data="navl")])
-        await tbot.send_message(-1001587192183, f"**Request Unavailable**\n\n~~{xx}~~", buttons=btns)
+        await tbot.send_message(-1001588917099, f"**Request Unavailable**\n\n~~{xx}~~", buttons=btns)
     else:
         await event.answer("Who are you? This is for admins only..", alert=True, cache_time=0)
         
@@ -132,7 +132,7 @@ async def isdone(e):
             [Button.url("Ongoing Anime", url="https://t.me/AnimeChamberOngoing")]]
        
         await e.edit(f"**COMPLETED**\n\n~~{xx}~~", buttons=[Button.inline("Request Completed", data="donne")])
-        await tbot.send_message(-1001587192183, f"**Request Completed**\n\n~~{xx}~~", buttons=btns)
+        await tbot.send_message(-1001588917099, f"**Request Completed**\n\n~~{xx}~~", buttons=btns)
     else:
         await e.answer("Who are you? This is for admins only..", alert=True, cache_time=0)
         
