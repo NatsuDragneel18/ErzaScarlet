@@ -63,9 +63,13 @@ Hey there, {}!
 
 Hey I Am {}
 
-I Am An Anime Themed Group Management Bot. Which Manage Only Anime Chamber Club Groups.
+I can manage your group easily with many feautres and games. **Just add me in your group to use me.
 
-Too see commands send /help or !help.
+*Status*: Working Fine
+
+*Life Force*: `100%`
+
+Too see commands send /help .
 """
 
 
