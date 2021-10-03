@@ -206,15 +206,16 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Help & Commands",
+                                text="Add",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username),
                                     
                                 ),
                             ),
                             InlineKeyboardButton(
-                                text="Chat Group",
-                                url=f"https://t.me/TheChamberOfAnimeFans",
+                                text="Help & Commands",
+                                url=f"t.me/{}?start=help".format(
+                                    context.bot.username),
                             ),
                         ],
                     ],
