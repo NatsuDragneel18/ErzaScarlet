@@ -291,7 +291,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/ErzaScarlet_Support/19">?</a>]'.format(
+        text += ' [<a href="https://t.me/">?</a>]'.format(
             bot.username)
 
     try:
@@ -510,8 +510,7 @@ Examples:
 *Overall Information about you:*
  • `/info`*:* get information about a user. 
  
- *What Health means?*
-  Come and see [HP System explained](https://t.me/ErzaScarletUpdates/24).
+
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)
