@@ -166,6 +166,6 @@ __help__ = """
  ❍ /img <text>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
  ❍ /app <appname>*:* Searches for an app in Play Store and returns its details.
  ❍ /grs: Does a reverse image search of the media which it was replied to.
- ❍ Erza <query>*:* Erza answers the query
-  💡Ex: `Erza where is India?`
+ ❍ Zenitsu <query>*:* Zenitsu answers the query
+  💡Ex: `Zenitsu where is India?`
 """
