@@ -64,15 +64,15 @@ Hey I Am {}
 
 I can manage your group easily with many feautres and games. **Just add me in your group to use me.
 
-*Status*: [Working Fine](https://t.me/ErzaScarlet_Support)
+*Status*: `Working Fine`
 *Life Force*: `100%`
 
-Too see commands send /help .
+Too see commands send /help or !help.
 """
 
 
 HELP_STRINGS = """
-*Main Commands :* [ʕ·ᴥ·ʔ](https://telegra.ph/file/f14c63556a46189167eb7.jpg)
+*Main Commands :* [ʕ·ᴥ·ʔ](https://telegra.ph/file/da708158959b105fc3ff8.jpg)
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
 ✪ /settings: 
@@ -80,9 +80,9 @@ HELP_STRINGS = """
    ◔ in a Group: will redirect you to pm, with all that chat's settings.
 """
 
-ErzaScarlet_IMG = "https://indianime.com/wp-content/uploads/2021/08/photo_2021-08-21_12-17-22.jpg)"
-ErzaScarlet_YAWN = "https://telegra.ph/file/baad9f6111310638c438c.mp4" #"https://telegra.ph/file/df5c1103ab9d539ab760d.gif"
-YAWN_CPT = "I am Awake ! ~ 💤"
+ErzaScarlet_IMG = "https://telegra.ph/file/d568490af19092a7887b0.jpg"
+ErzaScarlet_YAWN = "https://telegra.ph/file/8318ad37329d6805f4781.mp4"
+YAWN_CPT = "I am Awake!"
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -206,14 +206,14 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Add Erza In Your Group",
+                                text="Add",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username,
                                 ),
                             ),
                             InlineKeyboardButton(
-                                text="Support Group",
-                                url=f"https://t.me/{SUPPORT_CHAT}",
+                                text="Chat",
+                                url=f"https://t.me/thechamberofanimefans",
                             ),
                         ],
                     ],
