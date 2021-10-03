@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
 
-IN_GRP = -1001588917099
+IN_GRP = -1001587192183
 bot = asst = tbot
 REQ_GO =  -1001553672673
 on = tbot.on
