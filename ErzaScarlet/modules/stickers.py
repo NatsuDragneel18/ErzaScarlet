@@ -379,7 +379,7 @@ def makepack_internal(
             success = context.bot.create_new_sticker_set(
                 user.id,
                 packname,
-                f"{name}'s Sticker Pack | @ErzaScarlet_Groupbot" + extra_version,
+                f"{name}'s Sticker Pack | @Zenitsu_Agatsuma_Probot" + extra_version,
                 png_sticker=png_sticker,
                 emojis=emoji,
             )
@@ -387,7 +387,7 @@ def makepack_internal(
             success = context.bot.create_new_sticker_set(
                 user.id,
                 packname,
-                f"{name}'s Animatied Pack | @ErzaScarlet_Groupbot" + extra_version,
+                f"{name}'s Animatied Pack | @Zenitsu_Agatsuma_Probot" + extra_version,
                 tgs_sticker=tgs_sticker,
                 emojis=emoji,
             )
