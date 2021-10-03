@@ -207,7 +207,8 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="Help & Commands",
-                                url="t.me/{}?start=help".format(context.bot.username),
+                                url="t.me/{}?startgroup=true".format(
+                                    context.bot.username),
                                     
                                 ),
                             ),
