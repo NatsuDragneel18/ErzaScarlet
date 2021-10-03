@@ -62,7 +62,7 @@ async def filter_requests(event):
             [Button.url("Index Channel", url="https://t.me/animechamberanime"),
             Button.url("Manga Channel", url="https://t.me/mangachamber")],
             [Button.url("Ongoing Anime", url="https://t.me/AnimeChamberOngoing")]]
-        await event.reply(f"**👋 Hello {user} !!**\n\n✥Your Request `{anim}` Has Been Sended To The Group Admins.\n\n✥Now You Should Have Patience.\n\n✥Your Request Will Be Upload As Soon As Our Admins See's It, In The Respective Channels. \n\n**👇See Your Request Status Here👇**", buttons=btns)
+        await event.reply(f"👋 Hello {user} !!**\n\n✥Your Request `{anim}` Has Been Sended To The Group Admins.\n\n✥Now You Should Have Patience.\n\n✥Your Request Will Be Upload As Soon As Our Admins See's It, In The Respective Channels. \n\nSee Your Request Status Here", buttons=btns)
         if not auth:
             async for x in bot.iter_participants("@thechamberofanimefans", filter=ChannelParticipantsAdmins):
                 auth.append(x.id)
