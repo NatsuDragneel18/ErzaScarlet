@@ -67,7 +67,7 @@ I can manage your group easily with many feautres and games. **Just add me in yo
 
 
 
-Too see commands send /help or click on help button.
+Too see commands send /help or !help.
 """
 
 
@@ -213,9 +213,9 @@ def start(update: Update, context: CallbackContext):
                                 ),
                             ),
                             InlineKeyboardButton(
-                                text="Help & Commands",
-                                url=f"t.me/{}?start=help".format(
-                                    context.bot.username),
+                                text="Chat ",
+                                url=f"https://t.me/Thechamberofanimefans",
+                                   
                             ),
                         ],
                     ],
