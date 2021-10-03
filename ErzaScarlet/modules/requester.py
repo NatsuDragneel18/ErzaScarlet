@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
 
-IN_GRP = -1001587192183
+IN_GRP = -1001588917099
 bot = asst = tbot
 REQ_GO =  -1001553672673
 on = tbot.on
@@ -62,7 +62,7 @@ async def filter_requests(event):
             [Button.url("Index Channel", url="https://t.me/animechamberanime"),
             Button.url("Manga Channel", url="https://t.me/mangachamber")],
             [Button.url("Ongoing Anime", url="https://t.me/AnimeChamberOngoing")]]
-        await event.reply(f"**👋 Hello {user} !!**\n\n✥ Your Request for  `{anim}`  has been submitted to the admins.\n\n✥ Your Request Will Be Uploaded In ASAP. \n\n**✥ See Your Request Status Here ✥**", buttons=btns)
+        await event.reply(f"**👋 Hello {user} !!**\n\n✥Your Request `{anim}` Has Been Sended To The Group Admins.\n\n✥Now You Should Have Patience.\n\n✥Your Request Will Be Upload As Soon As Our Admins See's It, In The Respective Channels. \n\n**👇See Your Request Status Here👇**", buttons=btns)
         if not auth:
             async for x in bot.iter_participants("@thechamberofanimefans", filter=ChannelParticipantsAdmins):
                 auth.append(x.id)
@@ -107,7 +107,7 @@ async def delete_message(event):
             [Button.url("Ongoing Anime", url="https://t.me/AnimeChamberOngoing")]]
        
         await event.edit(f"**UNAVAILABLE**\n\n~~{xx}~~", buttons=[Button.inline("Unavailable", data="navl")])
-        await tbot.send_message(-1001415010098, f"**Request Unavailable**\n\n~~{xx}~~", buttons=btns)
+        await tbot.send_message(-1001588917099, f"**Request Unavailable**\n\n~~{xx}~~", buttons=btns)
     else:
         await event.answer("Who are you? This is for admins only..", alert=True, cache_time=0)
         
@@ -139,7 +139,7 @@ async def isdone(e):
     
 @tbot.on(events.callbackquery.CallbackQuery(data="donne"))
 async def ans(e):
-    await e.answer("This Request Is Completed... Checkout @AnimeChamberUploads 💖", alert=True, cache_time=0)
+    await e.answer("This Request Is Completed... Checkout @AnimeChamberUploads Or @AnimeChamberOngoing If Ongoing Anime💖", alert=True, cache_time=0)
         
 @tbot.on(events.callbackquery.CallbackQuery(data="navl"))
 async def ans(e):
