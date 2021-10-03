@@ -65,11 +65,9 @@ Hey I Am {}
 
 I can manage your group easily with many feautres and games. **Just add me in your group to use me.
 
-*Status*: Working Fine
 
-*Life Force*: `100%`
 
-Too see commands send /help .
+Too see commands send /help or click on help button.
 """
 
 
@@ -208,9 +206,9 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Add Bot In Your Group",
-                                url="t.me/{}?startgroup=true".format(
-                                    context.bot.username,
+                                text="Help & Commands",
+                                url="t.me/{}?start=help".format(context.bot.username),
+                                    
                                 ),
                             ),
                             InlineKeyboardButton(
